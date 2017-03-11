@@ -10,6 +10,11 @@ public class JungleDungeon extends Dungeon {
     }
 
     @Override
+    public void printMap(int currentCoordinateX, int currentCoordinateY) {
+
+    }
+
+    @Override
     public void setTraps() {
         setTrapCoordinateX(2);
         setTrapCoordinateY(4);

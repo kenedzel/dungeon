@@ -45,7 +45,7 @@ public class Player {
     {
         if(currentCoordinateY != maxCoordinateY)
         {
-            ++currentCoordinateY;
+            currentCoordinateY++;
         }
         else
         {
@@ -58,7 +58,7 @@ public class Player {
     {
         if (currentCoordinateY != 0)
         {
-            --currentCoordinateY;
+            currentCoordinateY--;
         }
         else
         {
@@ -68,9 +68,9 @@ public class Player {
 
     public void moveLeft(int maxCoordinateX)
     {
-        if (currentCoordinateX != 0)
+        if (currentCoordinateX != 0) //and not greater than max coordinate
         {
-            --currentCoordinateX;
+            currentCoordinateX++;
         }
         else
         {
@@ -80,9 +80,9 @@ public class Player {
 
     public void moveRight(int maxCoordinateX)
     {
-        if( currentCoordinateX != maxCoordinateX)
+        if( currentCoordinateX != maxCoordinateX && currentCoordinateX !=0)
         {
-            ++currentCoordinateX;
+            currentCoordinateX--;
         }
         else
         {

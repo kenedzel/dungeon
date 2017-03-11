@@ -88,16 +88,6 @@ public abstract class Dungeon {
         this.name = name;
     }
 
-    public void setTraps()
-    {
-
-    }
-
-    public void setEndPortalCoordinates()
-    {
-
-    }
-
     public int generateRandomDamage()
     {
         Random random = new Random();
@@ -105,13 +95,18 @@ public abstract class Dungeon {
         return randomDamage;
     }
 
-    public void printTrapMessage()
-    {
 
-    }
 
     public void printEndMessage()
     {
         System.out.println("Entering another dungeon. . .");
     }
+
+    public abstract void printMap(int currentCoordinateX, int currentCoordinateY);
+
+    public abstract void printTrapMessage();
+
+    public abstract void setEndPortalCoordinates();
+
+    public abstract void setTraps();
 }

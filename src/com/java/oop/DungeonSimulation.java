@@ -8,6 +8,7 @@ import java.util.Scanner;
  * Created by kenneth on 3/10/17.
  */
 public class DungeonSimulation {
+
     public static void main(String[] args) {
         int stage;
         Scanner scanner = new Scanner(System.in);
@@ -17,7 +18,7 @@ public class DungeonSimulation {
         printDungeonSelection();
         stage = scanner.nextInt();
         scanner.nextLine();
-        Player player = new Player(playerName, 0, 0);
+        Player player = new Player(playerName, 1, 1);
         switch (stage)
         {
             case 1:
@@ -26,6 +27,7 @@ public class DungeonSimulation {
                 filthyDungeon.setTraps();
                 filthyDungeon.setEndPortalCoordinates();
                 do{
+                    filthyDungeon.printMap(player.getCurrentCoordinateX(), player.getCurrentCoordinateY());
                     System.out.println("Commence a movement (W - up, A - left, S - down, D - right): ");
                     movement = scanner.nextLine();
                     if(movement.equals("W") || movement.equals("w"))
