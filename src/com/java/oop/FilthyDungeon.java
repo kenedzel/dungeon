@@ -23,7 +23,7 @@ public class FilthyDungeon extends Dungeon {
                 }
                 else
                 {
-                    System.out.print("(" + x + ", "+ y + ")");
+                    System.out.print("+");
                 }
             }
             System.out.println();
@@ -45,6 +45,6 @@ public class FilthyDungeon extends Dungeon {
 
     @Override
     public void printTrapMessage() {
-        System.out.println("Oh no! You stepped on a dung.");
+        System.out.println("Oh no! You stepped on a dung. \nGame Over");
     }
 }

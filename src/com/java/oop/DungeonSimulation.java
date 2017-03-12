@@ -73,6 +73,7 @@ public class DungeonSimulation {
                 jungleDungeon.setEndPortalCoordinates();
 
                 do{
+                    jungleDungeon.printMap(player.getCurrentCoordinateX(), player.getCurrentCoordinateY());
                     System.out.println("Commence a movement (W - up, A - left, S - down, D - right): ");
                     movement = scanner.nextLine();
                     if(movement.equals("W") || movement.equals("w"))
@@ -117,6 +118,7 @@ public class DungeonSimulation {
                 alienDungeon.setEndPortalCoordinates();
 
                 do {
+                    alienDungeon.printMap(player.getCurrentCoordinateX(), player.getCurrentCoordinateY());
                     System.out.println("Commence a movement (W - up, A - left, S - down, D - right): ");
                     movement = scanner.nextLine();
                     if(movement.equals("W") || movement.equals("w"))

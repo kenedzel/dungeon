@@ -10,8 +10,23 @@ public class JungleDungeon extends Dungeon {
     }
 
     @Override
-    public void printMap(int currentCoordinateX, int currentCoordinateY) {
-
+    public void printMap(int currentCoordinateX, int currentCoordinateY)
+    {
+        for (int y = getMaxCoordinateY() ; y > 0 ; y--)
+        {
+            for (int x = getMaxCoordinateX() ; x > 0 ; x--)
+            {
+                if (currentCoordinateX == x && currentCoordinateY == y)
+                {
+                    System.out.print("x");
+                }
+                else
+                {
+                    System.out.print("=");
+                }
+            }
+            System.out.println();
+        }
     }
 
     @Override

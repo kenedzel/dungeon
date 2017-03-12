@@ -15,6 +15,7 @@ public class Player {
         this.name = name;
         this.currentCoordinateX = currentCoordinateX;
         this.currentCoordinateY = currentCoordinateY;
+        System.out.println("Commencing " + name + "'s Game.");
     }
 
     public int getCurrentCoordinateX() {
@@ -43,7 +44,11 @@ public class Player {
 
     public void moveUp(int maxCoordinateY)
     {
-        if(currentCoordinateY != maxCoordinateY)
+        if(currentCoordinateY == 0)
+        {
+            System.out.println("you bumped into a wall.");
+        }
+        else if(currentCoordinateY != maxCoordinateY )
         {
             currentCoordinateY++;
         }
@@ -56,7 +61,11 @@ public class Player {
 
     public void moveDown(int maxCoordinateY)
     {
-        if (currentCoordinateY != 0)
+        if (currentCoordinateY > maxCoordinateY || currentCoordinateY == 0)
+        {
+            System.out.println("you bumped into a wall.");
+        }
+        else if (currentCoordinateY != 0 && currentCoordinateY != 1)
         {
             currentCoordinateY--;
         }
@@ -68,7 +77,11 @@ public class Player {
 
     public void moveLeft(int maxCoordinateX)
     {
-        if (currentCoordinateX != 0) //and not greater than max coordinate
+        if(currentCoordinateX > maxCoordinateX || currentCoordinateX == 0)
+        {
+            System.out.println("you bumped into a wall");
+        }
+        else if (currentCoordinateX != 0 && currentCoordinateX < maxCoordinateX) //and not greater than max coordinate
         {
             currentCoordinateX++;
         }
@@ -80,12 +93,18 @@ public class Player {
 
     public void moveRight(int maxCoordinateX)
     {
-        if( currentCoordinateX != maxCoordinateX && currentCoordinateX !=0)
+        if(currentCoordinateX > maxCoordinateX || currentCoordinateX == 0)
+        {
+            System.out.println(currentCoordinateX);
+            System.out.println("you bumped into a wall.");
+        }
+        else if(currentCoordinateX <= maxCoordinateX && currentCoordinateX != 1)
         {
             currentCoordinateX--;
         }
         else
         {
+            System.out.println(currentCoordinateX);
             System.out.println("you bumped into a wall.");
         }
     }
