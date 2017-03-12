@@ -44,6 +44,11 @@ public class AlienDungeon extends Dungeon {
 
     @Override
     public void printTrapMessage() {
-        System.out.println("You've been abducted by an alien. ayyy lmao");
+        System.out.println("You've been abducted by an alien. ayyy lmao\nGame Over.");
+    }
+
+    @Override
+    public void printEndMessage() {
+        System.out.println("Congratulations! You've successfully entered the final portal.");
     }
 }

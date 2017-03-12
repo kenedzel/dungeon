@@ -99,7 +99,7 @@ public abstract class Dungeon {
 
     public void printEndMessage()
     {
-        System.out.println("Entering another dungeon. . .");
+        System.out.println("Congratulations! You've entered into the portal.\nEntering another dungeon. . .");
     }
 
     public abstract void printMap(int currentCoordinateX, int currentCoordinateY);

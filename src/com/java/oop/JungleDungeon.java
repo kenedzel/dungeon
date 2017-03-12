@@ -43,6 +43,6 @@ public class JungleDungeon extends Dungeon {
 
     @Override
     public void printTrapMessage() {
-        System.out.println("You've been mauled to death by harambe.");
+        System.out.println("You've been mauled to death by harambe.\nGame Over");
     }
 }
