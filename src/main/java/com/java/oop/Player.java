@@ -111,27 +111,13 @@ public class Player {
 
     public boolean isTrapped(int trapCoordinateX, int trapCoordinateY)
     {
-        if (getCurrentCoordinateX() == trapCoordinateX &&
-                getCurrentCoordinateY() == trapCoordinateY)
-        {
-            return true;
-        }
-        else
-        {
-            return false;
-        }
+        return getCurrentCoordinateX() == trapCoordinateX &&
+                getCurrentCoordinateY() == trapCoordinateY;
     }
 
     public boolean isFinished(int trapCoordinateX, int trapCoordinateY)
     {
-        if(getCurrentCoordinateX() == trapCoordinateX &&
-                getCurrentCoordinateY() == trapCoordinateY)
-        {
-            return true;
-        }
-        else
-        {
-            return false;
-        }
+        return getCurrentCoordinateX() == trapCoordinateX &&
+                getCurrentCoordinateY() == trapCoordinateY;
     }
 }
