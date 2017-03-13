@@ -45,6 +45,6 @@ public class FilthyDungeon extends Dungeon {
 
     @Override
     public void printTrapMessage() {
-        System.out.println("Oh no! You stepped on a dung. \nGame Over");
+        System.out.println("Oh no! You stepped on a poo.\nGame Over");
     }
 }

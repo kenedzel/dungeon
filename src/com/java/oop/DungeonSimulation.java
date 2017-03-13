@@ -50,8 +50,6 @@ public class DungeonSimulation {
             {
                 System.out.println("Invalid movement, please try again");
             }
-            System.out.println("("+ player.getCurrentCoordinateX() + " , " + player.getCurrentCoordinateY() + ")");
-            System.out.println(filthyDungeon.getTrapCoordinateX() + ", " + filthyDungeon.getTrapCoordinateY());
 
 
         }while(!player.isTrapped(filthyDungeon.getTrapCoordinateX(), filthyDungeon.getTrapCoordinateY()) &&
@@ -103,9 +101,6 @@ public class DungeonSimulation {
                 System.out.println("Invalid movement, please try again");
             }
 
-            System.out.println("("+ player.getCurrentCoordinateX() + " , " + player.getCurrentCoordinateY() + ")");
-            System.out.println(jungleDungeon.getTrapCoordinateX() + ", " + jungleDungeon.getTrapCoordinateY());
-
         }while(!player.isTrapped(jungleDungeon.getTrapCoordinateX(), jungleDungeon.getTrapCoordinateY()) &&
                 !player.isFinished(jungleDungeon.getEndPortalCoordinateX(), jungleDungeon.getEndPortalCoordinateY()));
 
@@ -153,8 +148,6 @@ public class DungeonSimulation {
             {
                 System.out.println("Invalid movement, please try again");
             }
-            System.out.println("("+ player.getCurrentCoordinateX() + " , " + player.getCurrentCoordinateY() + ")");
-            System.out.println(alienDungeon.getTrapCoordinateX() + ", " + alienDungeon.getTrapCoordinateY());
 
         }while(!player.isTrapped(alienDungeon.getTrapCoordinateX(), alienDungeon.getTrapCoordinateY()) &&
                 !player.isFinished(alienDungeon.getEndPortalCoordinateX(), alienDungeon.getEndPortalCoordinateY()));

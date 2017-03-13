@@ -29,7 +29,7 @@ public abstract class Dungeon {
         this.maxCoordinateX = maxCoordinateX;
         this.maxCoordinateY = maxCoordinateY;
         this.name = name;
-        System.out.println("Welcome to " + name);
+        System.out.println("Welcome to " + name);//
     }
 
     public int getEndPortalCoordinateX() {

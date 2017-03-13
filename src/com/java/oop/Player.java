@@ -15,7 +15,7 @@ public class Player {
         this.name = name;
         this.currentCoordinateX = currentCoordinateX;
         this.currentCoordinateY = currentCoordinateY;
-        System.out.println("Commencing " + name + "'s Game.");
+        System.out.println("Commencing " + name + "'s Game.");//
     }
 
     public int getCurrentCoordinateX() {

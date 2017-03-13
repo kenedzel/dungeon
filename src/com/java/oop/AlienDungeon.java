@@ -44,7 +44,7 @@ public class AlienDungeon extends Dungeon {
 
     @Override
     public void printTrapMessage() {
-        System.out.println("You've been abducted by an alien. ayyy lmao\nGame Over.");
+        System.out.println("You've been abducted by an alien.\nGame Over.");
     }
 
     @Override
