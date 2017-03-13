@@ -15,7 +15,6 @@ public class Player {
         this.name = name;
         this.currentCoordinateX = currentCoordinateX;
         this.currentCoordinateY = currentCoordinateY;
-        System.out.println("Commencing " + name + "'s Game.");//
     }
 
     public int getCurrentCoordinateX() {
@@ -119,5 +118,11 @@ public class Player {
     {
         return getCurrentCoordinateX() == trapCoordinateX &&
                 getCurrentCoordinateY() == trapCoordinateY;
+    }
+
+
+    public void displayPlayer()
+    {
+        System.out.println("Starting " + getName() + "'s Game");
     }
 }

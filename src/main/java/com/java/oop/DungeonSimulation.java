@@ -1,5 +1,9 @@
 package com.java.oop;
 
+import org.joda.time.LocalDate;
+import org.joda.time.format.DateTimeFormat;
+import org.joda.time.format.DateTimeFormatter;
+
 import java.util.Random;
 import java.util.Scanner;
 
@@ -17,6 +21,7 @@ public class DungeonSimulation {
     static Random randomize = new Random();
 
     static Player player = new Player("Player 1", 1, 1);
+
 
     public static void playFilthyDungeon()
     {
@@ -183,6 +188,8 @@ public class DungeonSimulation {
 
     public static void playDungeons()
     {
+        displayTime();
+        displayPlayerName();
         playFilthyDungeon();
         playJungleDungeon();
         playAlienDungeon();
@@ -196,6 +203,19 @@ public class DungeonSimulation {
         {
             playDungeons();
         }
+    }
+
+    public static void displayPlayerName()
+    {
+        player.displayPlayer();
+    }
+
+    public static void displayTime()
+    {
+
+        LocalDate localDate = LocalDate.now();
+        DateTimeFormatter formatter = DateTimeFormat.forPattern("MMMM d, yyyy");
+        System.out.println(localDate.toString(formatter));
     }
     public static void main(String[] args) {
         initPlayDungeons();
